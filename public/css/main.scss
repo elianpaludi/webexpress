@@ -17,21 +17,12 @@ font-face {
 }
 
 
-#cursor{
-    position:absolute;
-    width:20px;
-    height:20px;
-    border: 2px solid rgb(115, 180, 218);
-    box-sizing: border-box;
-    transform:translate(-50%, -50%);
-    border-radius:50%;
-    pointer-events: none;
-   
-}
 header{
     width: 100%;
     font-family: 'Glory', sans-serif;
     nav{
+        z-index: 3;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -65,6 +56,8 @@ main{
         padding: 15px;
         width: 50%;
         h1{
+            z-index: 3;
+        position: relative;
             font-weight: 600;
             font-size: 82px;
             padding: 25px;
@@ -72,6 +65,8 @@ main{
         }
 
         h2{
+            z-index: 3;
+        position: relative;
             padding-left: 25px;
 
             span#typed{
@@ -92,7 +87,23 @@ main{
             position: relative;
             z-index: 15;
             width: 95%;
+            animation-name: movimiento;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
         }
     }
 }
 
+
+@keyframes movimiento{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translatey(-6%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+    
