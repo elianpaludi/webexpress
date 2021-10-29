@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@100;400;600;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Glory', sans-serif;
+}
+
+
+#cursor{
+    position:absolute;
+    width:20px;
+    height:20px;
+    border: 2px solid rgb(115, 180, 218);
+    box-sizing: border-box;
+    transform:translate(-50%, -50%);
+    border-radius:50%;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+header{
+    width: 100%;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    ul{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        
+        li{
+
+            a{
+                color:black;
+                font-size:18px;
+            }
+        }
+    }
+    }
+}
