@@ -113,6 +113,8 @@ main .banner {
 }
 
 main .banner img {
+  position: relative;
+  z-index: 15;
   width: 95%;
 }
 /*# sourceMappingURL=main.css.map */

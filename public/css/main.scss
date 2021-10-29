@@ -89,6 +89,8 @@ main{
         align-items:center;
 
         img{
+            position: relative;
+            z-index: 15;
             width: 95%;
         }
     }
